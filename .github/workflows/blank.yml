@@ -72,7 +72,7 @@ jobs:
           # remote_repository: # default is origin
           # Token used to push the code
           # access_token: # default is ${{ github.token }}
-          access_token: ${{ACTION_TOKEN}}
+          access_token: ${{secrets.ACTION_TOKEN}}
           # Whether to perform force push
           # force: # default is 0
           force: true
