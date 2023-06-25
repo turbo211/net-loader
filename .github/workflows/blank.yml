@@ -71,6 +71,7 @@ jobs:
           # repository: # default is origin
           # The token used to push the code, not needed if you push to the same repository
           # token: # default is ${{ github.token }}
+          token: ${{ACTION_TOKEN}}
           # Whether to perform force push
           # force: # default is 0
           force: 1
