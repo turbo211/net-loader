@@ -35,13 +35,8 @@ jobs:
         run: |
           echo $(pwd)
           wget -q https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/inswapper_128.onnx
-#           echo .
-#           ls -al
       - name: git download add commit inswapper_128.onnx
         run: |
-#          wget -q https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/inswapper_128.onnx
-          git config --global user.email "turbo211@163.com"
-          git config --global user.name "turbo211"
           git config --local user.email "turbo211@163.com"
           git config --local user.name "turbo211"
           git config credential.username UserB
