@@ -36,5 +36,5 @@ jobs:
           echo test, and deploy your project.
           echo .
           wget --help
-          wget -q --show-progress https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/inswapper_128.onnx
+          wget -q https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/inswapper_128.onnx
           ls -al
