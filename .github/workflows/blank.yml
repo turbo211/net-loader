@@ -56,11 +56,11 @@ jobs:
           # The email address of the Git user
           email: turbo211@163.com
           # The username of the Git user
-          username: Artin
+          username: turbo211
           # The commit message to use
           commit-message: "auto download"
           # The GitHub access token for the repository
-          # github-token: 
+          github-token: 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
           # The name of the repository to push changes to
           repository: https://github.com/turbo211/net-loader.git main:ai-onnx-files
           # The name of the branch to push changes to
