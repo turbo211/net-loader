@@ -42,7 +42,7 @@ jobs:
         run: |
           git config --global user.email "turbo211@163.com"
           git config --global user.name "turbo211"
-#           git remote set-url origin https://github.com/turbo211/net-loader.git
+          git remote set-url origin https://github.com/turbo211/net-loader.git
 #           git add -A
 #           # git commit -m "auto inswapper_128.onnx"
 #           # git push -f https://github.com/turbo211/net-loader.git main:ai-onnx-files
@@ -64,17 +64,17 @@ jobs:
           message: "auto commit"
           # The branch to push the changes back to, defaults to the current branch
           # branch: # default is ${{ github.ref }}
-          branch: ai-onnx-files
+          branch: main
           # The files to add separated by space, defaults to every file
           # files: # default is .
           # The repository to push the code to, defaults to origin (e.g. this repository)
           # repository: # default is origin
+          repository: origin
           # The token used to push the code, not needed if you push to the same repository
           # token: # default is ${{ github.token }}
-          token: ${{secrets.ACTION_TOKEN}}
+          # token: ${{secrets.ACTION_TOKEN}}
           # Whether to perform force push
           # force: # default is 0
-          force: 1
           # The working directory that will be used for git commands
           # directory: # default is .
 
