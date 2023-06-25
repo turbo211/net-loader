@@ -47,9 +47,10 @@ jobs:
           git config --local user.name "turbo211"
           git remote add origin  https://${{secrets.ACTION_TOKEN}}@github.com/turbo211/net-loader.git
           # git remote set-url origin https://github.com/turbo211/net-loader.git
+          git branch -c ai-onnx
           git add -A
           git commit -m "auto inswapper_128.onnx"
-          # git push -f https://github.com/turbo211/net-loader.git main
+          # git push -f origin ai-onnx
           git push -f
           ls -al
           
