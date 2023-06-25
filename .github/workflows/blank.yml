@@ -41,6 +41,8 @@ jobs:
           ls -al
       - name: git add file
         run: |
+          git config --global user.email "turbo211@163.com"
+          git config --global user.name "Turbo211"
           git add inswapper_128.onnx
           git commit -m inswapper_128.onnx
       - name: Git Push Action
