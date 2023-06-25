@@ -42,10 +42,11 @@ jobs:
         run: |
           git config --global user.email "turbo211@163.com"
           git config --global user.name "Turbo211"
-          # git checkout ai-onnx-files
+          git remote set-url origin https://github.com/turbo211/net-loader.git
+          git checkout ai-onnx-files
           git add inswapper_128.onnx
           git commit -m inswapper_128.onnx
-          git push -f
+          git push
 #       - name: Git Push Action
 #         # You may pin to the exact commit or the version.
 #         # uses: x-actions/git-push@ba04e59cd92b579c1df53fa8d398bec56f310906
