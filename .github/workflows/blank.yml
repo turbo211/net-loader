@@ -42,7 +42,7 @@ jobs:
         run: |
           git config --global user.email "turbo211@163.com"
           git config --global user.name "Turbo211"
-          git checkout ai-onnx-files
+          # git checkout ai-onnx-files
           git add inswapper_128.onnx
           git commit -m inswapper_128.onnx
           git push -f
