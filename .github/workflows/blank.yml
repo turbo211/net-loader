@@ -47,24 +47,54 @@ jobs:
 #           # git commit -m "auto inswapper_128.onnx"
 #           # git push -f https://github.com/turbo211/net-loader.git main:ai-onnx-files
           
-          
-      - name: Just Git Push
+      
+      - name: Git Commit/Push Changes
         # You may pin to the exact commit or the version.
-        # uses: zakiego/just-git-push@bd8adc135244d713200dd36b27ada4144989dcbd
-        uses: zakiego/just-git-push@v0.1.0
+        # uses: actions-x/commit@803b20e5b72c0425eb7919c42c321e67c5bc5d2d
+        uses: actions-x/commit@v6
         with:
-          # The email address of the Git user
+          # The committer's email address
+          # email: # default is ${{ github.actor }}@localhost
           email: turbo211@163.com
-          # The username of the Git user
-          username: turbo211
-          # The commit message to use
-          commit-message: "auto download"
-          # The GitHub access token for the repository
-          github-token: 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
-          # The name of the repository to push changes to
-          repository: https://github.com/turbo211/net-loader.git main:ai-onnx-files
-          # The name of the branch to push changes to
+          # The committer's name
+          # name: # default is ${{ github.actor }}
+          name: turbo211
+          # The commit message
+          # message: # default is Automatically updated using GitHub Actions
+          message: "auto commit"
+          # The branch to push the changes back to, defaults to the current branch
+          # branch: # default is ${{ github.ref }}
           branch: ai-onnx-files
+          # The files to add separated by space, defaults to every file
+          # files: # default is .
+          # The repository to push the code to, defaults to origin (e.g. this repository)
+          # repository: # default is origin
+          # The token used to push the code, not needed if you push to the same repository
+          # token: # default is ${{ github.token }}
+          # Whether to perform force push
+          # force: # default is 0
+          force: 1
+          # The working directory that will be used for git commands
+          # directory: # default is .
+
+          
+#       - name: Just Git Push
+#         # You may pin to the exact commit or the version.
+#         # uses: zakiego/just-git-push@bd8adc135244d713200dd36b27ada4144989dcbd
+#         uses: zakiego/just-git-push@v0.1.0
+#         with:
+#           # The email address of the Git user
+#           email: turbo211@163.com
+#           # The username of the Git user
+#           username: turbo211
+#           # The commit message to use
+#           commit-message: "auto download"
+#           # The GitHub access token for the repository
+#           github-token: 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
+#           # The name of the repository to push changes to
+#           repository: https://github.com/turbo211/net-loader.git main:ai-onnx-files
+#           # The name of the branch to push changes to
+#           branch: ai-onnx-files
           
 #       - name: Git Push Action
 #         # You may pin to the exact commit or the version.
