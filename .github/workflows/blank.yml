@@ -31,15 +31,16 @@ jobs:
       - name: show wget version info
         run: wget --version
       # Runs a set of commands using the runners shell
-      - name: download inswapper_128.onnx
+#       - name: download inswapper_128.onnx
+#         run: |
+#           echo $(pwd)
+#           pwd
+#           wget -q https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/inswapper_128.onnx
+#           echo .
+#           ls -al
+      - name: git download add commit inswapper_128.onnx
         run: |
-          echo $(pwd)
-          pwd
           wget -q https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/inswapper_128.onnx
-          echo .
-          ls -al
-      - name: git add file
-        run: |
           git config --global user.email "turbo211@163.com"
           git config --global user.name "turbo211"
           git config --local user.email "turbo211@163.com"
