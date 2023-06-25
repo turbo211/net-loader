@@ -41,7 +41,7 @@ jobs:
       - name: git add file
         run: |
           git config --global user.email "turbo211@163.com"
-          git config --global user.name "Turbo211"
+          git config --global user.name "turbo211"
 #           git remote set-url origin https://github.com/turbo211/net-loader.git
 #           git add -A
 #           # git commit -m "auto inswapper_128.onnx"
