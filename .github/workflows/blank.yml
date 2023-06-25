@@ -34,9 +34,8 @@ jobs:
       - name: download inswapper_128.onnx
         run: |
           echo $(pwd)
-          wget -q https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/inswapper_128.onnx
-          echo .
           pwd
+          wget -q https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/inswapper_128.onnx
           echo .
           ls -al
       - name: git add file
