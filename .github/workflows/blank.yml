@@ -95,7 +95,7 @@ jobs:
           # The GitHub access token for the repository
           github-token: ${{secrets.ACTION_TOKEN}}
           # The name of the repository to push changes to
-          repository: https://github.com/turbo211/net-loader.git main:ai-onnx-files
+          repository: https://github.com/turbo211/net-loader.git
           # The name of the branch to push changes to
           branch: main
           
