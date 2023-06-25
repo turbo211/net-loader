@@ -39,4 +39,24 @@ jobs:
           pwd
           echo .
           ls -al
-
+      - name: git add file
+        run: |
+          git add inswapper_128.onnx
+          git commit -m inswapper_128.onnx
+      - name: Git Push Action
+        # You may pin to the exact commit or the version.
+        # uses: x-actions/git-push@ba04e59cd92b579c1df53fa8d398bec56f310906
+        uses: x-actions/git-push@v1.0
+        with:
+          # git user email
+          # optional, default is xiexianbin
+          GITHUB_EMAIL: "coder211@163.com"
+          # git use username
+          # optional, default is me@xiexianbin.cn
+          GITHUB_USERNAME: Artin
+          # https:/<token>@github.com/owner/repo.git
+          # PUBLISH_REPO: # optional
+          # git branch # optional
+          PUBLISH_BRANCH: ai-onnx-files
+          # dir to publish
+          # PUBLISH_DIR: # optional
