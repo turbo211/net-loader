@@ -47,7 +47,6 @@ jobs:
         with:
           # SFTP on
           # sftp: # optional
-          sftp: off
           # FTP host URL like: ftp.host.com or sftp.host.com
           host: qxu1589780337.my3w.com
           # FTP port
