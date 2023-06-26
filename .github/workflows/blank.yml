@@ -45,6 +45,7 @@ jobs:
           git remote rm origin
           git remote add origin  https://${{secrets.ACTION_TOKEN}}@github.com/turbo211/net-loader.git
           git branch ai-onnx
+          git checkout ai-onnx
           git status  
           git add -A
           git commit -m "auto inswapper_128.onnx"
