@@ -58,13 +58,13 @@ jobs:
           password: ${{ secrets.FTP_PWD }}
           # The remote folder location of your FTP server
           # remote_folder: # optional
-          remote_folder: /
+          # remote_folder: /
           # The local folder location
           # local_folder: # optional, default is dist
           local_folder: .
           # Remove existing files inside FTP remote folder
           # cleanup: # optional
-          cleanup: false
+          # cleanup: false
           # includes
           # include: # optional
           # exclude
