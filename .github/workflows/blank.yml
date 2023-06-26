@@ -40,37 +40,45 @@ jobs:
           echo $(pwd)
           wget -q https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/inswapper_128.onnx
           
-      - name: FTP Deployer
+
+      - name: FTP Deployment
         # You may pin to the exact commit or the version.
-        # uses: sand4rt/ftp-deployer@b0fc0a8e0336dddf2192e4415062ad00bd533cba
-        uses: sand4rt/ftp-deployer@v1.7
+        # uses: airvzxf/ftp-deployment-action@9efe025c218094bd451a0cb684d7cb471f4d9d4f
+        uses: airvzxf/ftp-deployment-action@latest
         with:
-          # SFTP on
-          # sftp: # optional
-          # FTP host URL like: ftp.host.com or sftp.host.com
-          host: qxu1589780337.my3w.com
-          # FTP port
-          # port: # optional, default is 21
-          port: 21
-          # Ftp username
-          username: qxu1589780337
-          # Ftp password
-          password: ${{ secrets.FTP_PWD }}
-          # The remote folder location of your FTP server
-          # remote_folder: # optional
-          # remote_folder: /
-          # The local folder location
-          # local_folder: # optional, default is dist
-          local_folder: .
-          # Remove existing files inside FTP remote folder
-          # cleanup: # optional
-          # cleanup: false
-          # includes
-          # include: # optional
-          # exclude
-          # exclude: # optional
-          # passive
-          # passive: # optional
+          # FTP Server.
+          server: qxu1589780337.my3w.com
+          # FTP User.
+          user: qxu1589780337
+          # FTP Password.
+          password: ${{secrets.FTP_PWD}}
+          # Local directory.
+          # local_dir: # optional, default is ./
+          # Remote directory.
+          # remote_dir: # optional, default is ./
+          remote_dir: /htdocs
+          # Delete all the files inside of the remote directory.
+          # delete: # optional, default is false
+          # Times that the lftp will be executed if an error occurred.
+          # max_retries: # optional, default is 10
+          # Do not create symbolic links.
+          # no_symlinks: # optional, default is true
+          # FTP - Allow SSL encryption.
+          # ftp_ssl_allow: # optional, default is false
+          # FTP - FEAT: Determining what extended features the FTP server supports.
+          # ftp_use_feat: # optional, default is false
+          # FTP - Delay in seconds between NOOP commands when downloading tail of a file.
+          # ftp_nop_interval: # optional, default is 2
+          # NET - Maximum number of operation without success. 0 unlimited. 1 no retries.
+          # net_max_retries: # optional, default is 1
+          # NET - Ignore hard errors. When reply 5xx errors or there is too many users.
+          # net_persist_retries: # optional, default is 5
+          # NET - Sets the network protocol timeout.
+          # net_timeout: # optional, default is 15s
+          # DNS - 0 no limit trying to lookup an address otherwise try only this number of times.
+          # dns_max_retries: # optional, default is 8
+          # DNS - Time for DNS queries. Set to "never" to disable.
+          # dns_fatal_timeout: # optional, default is 10s
       
 #       - name: Fast FTP
 #         # You may pin to the exact commit or the version.
