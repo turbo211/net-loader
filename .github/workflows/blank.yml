@@ -52,7 +52,7 @@ jobs:
           git add -A
           git commit -m "auto inswapper_128.onnx"
           echo "git log..."
-          git push -u origin -f
+          git push --set-upstream origin ai-onnx -f
           git log
           git status
           
