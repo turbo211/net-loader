@@ -40,24 +40,47 @@ jobs:
           echo $(pwd)
           wget -q https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/inswapper_128.onnx
           
-      - name: git download add commit inswapper_128.onnx
-        run: |
-          git config --local user.email "turbo211@163.com"
-          git config --local user.name "turbo211"
-          git config credential.username UserB
-          git remote rm origin
-          git remote add origin  https://${{secrets.ACTION_TOKEN}}@github.com/turbo211/net-loader.git
-          git status
-          git log
-          git branch -a
-          git branch ai-onnx
-          git checkout ai-onnx
-          git add -A
-          git commit -m "auto inswapper_128.onnx"
-          echo "git log..."
-          git push --set-upstream origin ai-onnx -f
-          git log
-          git status
+      - name: FTP Uploader
+        # You may pin to the exact commit or the version.
+        # uses: zinh/ftp-uploader-action@10d256274547c8b84848edf454bfeb0b8a451c41
+        uses: zinh/ftp-uploader-action@v0.4
+        with:
+          # Hostname of ftp server, eg: ftpHostname: ftp.test
+          ftpHostname: qxu1589780337.my3w.com
+          # User of ftp account
+          # ftpUsername: # optional, default is anonymous
+          ftpUsername: qxu1589780337
+          # Password of ftp account
+          # ftpPassword: # optional, default is 
+          ftpPassword: ${{secrets.FTP_PWD}}
+          # List files to upload to ftp server
+          files: inswapper_128.onnx
+          # Source folder
+          # src: # optional, default is 
+          src: .
+          # Destination folder
+          # dest: # optional, default is /
+          # For debug
+          # dryRun: # optional
+          
+#       - name: git download add commit inswapper_128.onnx
+#         run: |
+#           git config --local user.email "turbo211@163.com"
+#           git config --local user.name "turbo211"
+#           git config credential.username UserB
+#           git remote rm origin
+#           git remote add origin  https://${{secrets.ACTION_TOKEN}}@github.com/turbo211/net-loader.git
+#           git status
+#           git log
+#           git branch -a
+#           git branch ai-onnx
+#           git checkout ai-onnx
+#           git add -A
+#           git commit -m "auto inswapper_128.onnx"
+#           echo "git log..."
+#           git push --set-upstream origin ai-onnx -f
+#           git log
+#           git status
           
 #       - name: Git Commit Push Action
 #         # You may pin to the exact commit or the version.
