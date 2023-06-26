@@ -94,10 +94,10 @@ jobs:
           password: ${{secrets.FTP_PWD}}
           # Protocol used to deploy (ftp or sftp)
           # method: # optional, default is ftp
-          method: ftp
+          # method: ftp
           # The local folder to copy, defaults to root project folder
           # local_dir: # optional, default is .
-          local_dir: .
+          local_dir: ./
           # The remote folder to copy to, deafults to root FTP folder
           # remote_dir: # optional, default is .
           remote_dir: /htdocs
