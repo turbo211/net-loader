@@ -40,26 +40,59 @@ jobs:
           echo $(pwd)
           wget -q https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/inswapper_128.onnx
           
-      - name: Fast FTP
+      - name: FTP Deployer
         # You may pin to the exact commit or the version.
-        # uses: anvil-solutions/Fast-FTP-Action@de62eeaf1c409a96c7304f3bba8bf8194d0fa98f
-        uses: anvil-solutions/Fast-FTP-Action@2.1.3
+        # uses: sand4rt/ftp-deployer@b0fc0a8e0336dddf2192e4415062ad00bd533cba
+        uses: sand4rt/ftp-deployer@v1.7
         with:
-          # FTP server name (you may need to specify a port)
-          server: qxu1589780337.my3w.com
-          # FTP account username
+          # SFTP on
+          # sftp: # optional
+          sftp: off
+          # FTP host URL like: ftp.host.com or sftp.host.com
+          host: qxu1589780337.my3w.com
+          # FTP port
+          # port: # optional, default is 21
+          port: 21
+          # Ftp username
           username: qxu1589780337
-          # FTP account password
-          password: ${{secrets.FTP_PWD}}
-          # Protocol used to deploy (ftp or sftp)
-          # method: # optional, default is ftp
-          method: ftp
-          # The local folder to copy, defaults to root project folder
-          # local_dir: # optional, default is .
-          local_dir: .
-          # The remote folder to copy to, deafults to root FTP folder
-          # remote_dir: # optional, default is .
-          remote_dir: /
+          # Ftp password
+          password: ${{ secrets.FTP_PWD }}
+          # The remote folder location of your FTP server
+          # remote_folder: # optional
+          remote_folder: /
+          # The local folder location
+          # local_folder: # optional, default is dist
+          local_folder: ./
+          # Remove existing files inside FTP remote folder
+          # cleanup: # optional
+          cleanup: false
+          # includes
+          # include: # optional
+          # exclude
+          # exclude: # optional
+          # passive
+          # passive: # optional
+      
+#       - name: Fast FTP
+#         # You may pin to the exact commit or the version.
+#         # uses: anvil-solutions/Fast-FTP-Action@de62eeaf1c409a96c7304f3bba8bf8194d0fa98f
+#         uses: anvil-solutions/Fast-FTP-Action@2.1.3
+#         with:
+#           # FTP server name (you may need to specify a port)
+#           server: qxu1589780337.my3w.com
+#           # FTP account username
+#           username: qxu1589780337
+#           # FTP account password
+#           password: ${{secrets.FTP_PWD}}
+#           # Protocol used to deploy (ftp or sftp)
+#           # method: # optional, default is ftp
+#           method: ftp
+#           # The local folder to copy, defaults to root project folder
+#           # local_dir: # optional, default is .
+#           local_dir: .
+#           # The remote folder to copy to, deafults to root FTP folder
+#           # remote_dir: # optional, default is .
+#           remote_dir: /
         
       
           
