@@ -48,6 +48,8 @@ jobs:
           git status  
           git add -A
           git commit -m "auto inswapper_128.onnx"
+          echo "git log..."
+          git log
           git status
           
       - name: Git Commit Push Action
