@@ -40,6 +40,7 @@ jobs:
         run: |
           echo $(pwd)
           wget -q https://drive.google.com/file/d/1jbDUGrADco9A1MutWjO6d_1dwizh9w9P/view?usp=sharing
+          ls -al
           
 
       - name: ftp-action
