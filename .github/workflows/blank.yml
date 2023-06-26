@@ -61,7 +61,7 @@ jobs:
           remote_folder: /
           # The local folder location
           # local_folder: # optional, default is dist
-          local_folder: ./
+          local_folder: .
           # Remove existing files inside FTP remote folder
           # cleanup: # optional
           cleanup: false
