@@ -29,10 +29,11 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
+      # wget -q https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/inswapper_128.onnx
       - name: download inswapper_128.onnx
         run: |
           echo $(pwd)
-          wget -q https://huggingface.co/MonsterMMORPG/SECourses/resolve/main/inswapper_128.onnx
+          wget -q https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_l.zip
           ls -al
           
 
