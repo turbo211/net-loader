@@ -33,8 +33,9 @@ jobs:
       - name: download inswapper_128.onnx
         run: |
           echo $(pwd)
-          wget -q https://github.com/obsproject/obs-studio/releases/download/30.1.2/OBS-Studio-30.1.2-macOS-Intel-dSYMs.tar.xz
-          wget -q https://github.com/obsproject/obs-studio/releases/download/30.1.2/OBS-Studio-30.1.2-macOS-Intel.dmg
+          # wget -q https://github.com/obsproject/obs-studio/releases/download/30.1.2/OBS-Studio-30.1.2-macOS-Intel-dSYMs.tar.xz
+          # wget -q https://github.com/obsproject/obs-studio/releases/download/30.1.2/OBS-Studio-30.1.2-macOS-Intel.dmg
+          wget -q https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-22.0.1/graalvm-community-jdk-22.0.1_macos-x64_bin.tar.gz
           # wget -q https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_x64_mac_hotspot_21.0.3_9.tar.gz
           ls -al
           
