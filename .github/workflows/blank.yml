@@ -48,10 +48,11 @@ jobs:
           # wget -q https://evermeet.cx/ffmpeg/ffprobe-7.0.1.7z
           # wget -q https://evermeet.cx/ffmpeg/ffplay-7.0.1.7z
           # wget -q https://evermeet.cx/ffmpeg/ffserver-3.4.2.7z
-          wget -q https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_l.zip
-          wget -q https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_s.zip
-          wget -q https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_sc.zip
-          wget -q https://github.com/deepinsight/insightface/releases/download/v0.7/scrfd_person_2.5g.onnx
+          # wget -q https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_l.zip
+          # wget -q https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_s.zip
+          # wget -q https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_sc.zip
+          # wget -q https://github.com/deepinsight/insightface/releases/download/v0.7/scrfd_person_2.5g.onnx
+          wget -q https://github.com/bhky/opennsfw2/releases/download/v0.1.0/open_nsfw_weights.h5
           ls -al
           
 
