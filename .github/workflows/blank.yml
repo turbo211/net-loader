@@ -52,7 +52,9 @@ jobs:
           # wget -q https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_s.zip
           # wget -q https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_sc.zip
           # wget -q https://github.com/deepinsight/insightface/releases/download/v0.7/scrfd_person_2.5g.onnx
-          wget -q https://github.com/bhky/opennsfw2/releases/download/v0.1.0/open_nsfw_weights.h5
+          # wget -q https://github.com/bhky/opennsfw2/releases/download/v0.1.0/open_nsfw_weights.h5
+          wget -q https://github.com/jgm/pandoc/releases/download/3.3/pandoc-3.3-windows-x86_64.msi
+          wget -q https://github.com/jgm/pandoc/releases/download/3.3/pandoc-3.3-windows-x86_64.zip
           ls -al
           
 
