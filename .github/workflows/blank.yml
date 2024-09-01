@@ -55,7 +55,9 @@ jobs:
           # wget -q https://github.com/bhky/opennsfw2/releases/download/v0.1.0/open_nsfw_weights.h5
           # wget -q https://github.com/jgm/pandoc/releases/download/3.3/pandoc-3.3-windows-x86_64.msi
           # wget -q https://github.com/jgm/pandoc/releases/download/3.3/pandoc-3.3-windows-x86_64.zip
+          # wget -q https://www.zotero.org/download/client/dl?channel=release&platform=win-x64
           wget -q https://www.zotero.org/download/client/dl?channel=release&platform=win-x64
+          wget -q https://www.zotero.org/download/client/dl?channel=release&platform=win-x64-zip
           ls -al
           
 
