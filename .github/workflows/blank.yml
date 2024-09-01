@@ -57,9 +57,11 @@ jobs:
           # wget -q https://github.com/jgm/pandoc/releases/download/3.3/pandoc-3.3-windows-x86_64.zip
           # wget -q https://www.zotero.org/download/client/dl?channel=release&platform=win-x64
           # wget -q https://www.zotero.org/download/client/dl?channel=release&platform=win-x64-zip
+          # curl -L --insecure https://www.zotero.org/download/client/dl?channel=release&platform=win-x64
+          # curl -L --insecure https://www.zotero.org/download/client/dl?channel=release&platform=win-x64-zip
+          wget -q https://download.zotero.org/client/release/7.0.3/Zotero-7.0.3_win-x64.zip
+          wget -q https://download.zotero.org/client/release/7.0.3/Zotero-7.0.3_x64_setup.exe
 
-          curl -L --insecure https://www.zotero.org/download/client/dl?channel=release&platform=win-x64
-          curl -L --insecure https://www.zotero.org/download/client/dl?channel=release&platform=win-x64-zip
           ls -al
           
 
