@@ -61,9 +61,11 @@ jobs:
           # curl -L --insecure https://www.zotero.org/download/client/dl?channel=release&platform=win-x64-zip
           # wget -q https://download.zotero.org/client/release/7.0.3/Zotero-7.0.3_win-x64.zip
           # wget -q https://download.zotero.org/client/release/7.0.3/Zotero-7.0.3_x64_setup.exe
-          wget -q https://numpy.org/doc/2.1/numpy-html.zip
-          wget -q https://docs.scipy.org/doc/scipy/scipy-html-1.14.0.zip
-          wget -q https://docs.scipy.org/doc/scipy-1.14.1/scipy-html-1.14.1.zip
+          # wget -q https://numpy.org/doc/2.1/numpy-html.zip
+          # wget -q https://docs.scipy.org/doc/scipy/scipy-html-1.14.0.zip
+          # wget -q https://docs.scipy.org/doc/scipy-1.14.1/scipy-html-1.14.1.zip
+          wget -q https://docs.opencv.org/4.10.0.zip
+          wget -q https://docs.opencv.org/4.10.0.tar.xz
 
 
           ls -al
