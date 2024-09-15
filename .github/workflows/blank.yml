@@ -64,8 +64,9 @@ jobs:
           # wget -q https://numpy.org/doc/2.1/numpy-html.zip
           # wget -q https://docs.scipy.org/doc/scipy/scipy-html-1.14.0.zip
           # wget -q https://docs.scipy.org/doc/scipy-1.14.1/scipy-html-1.14.1.zip
-          wget -q https://docs.opencv.org/4.10.0.zip
-          wget -q https://docs.opencv.org/4.10.0.tar.xz
+          # wget -q https://docs.opencv.org/4.10.0.zip
+          # wget -q https://docs.opencv.org/4.10.0.tar.xz
+          wget -q https://s3.amazonaws.com/redisinsight.download/public/latest/Redis-Insight-mac-x64.dmg
 
 
           ls -al
