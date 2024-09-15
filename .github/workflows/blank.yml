@@ -66,7 +66,9 @@ jobs:
           # wget -q https://docs.scipy.org/doc/scipy-1.14.1/scipy-html-1.14.1.zip
           # wget -q https://docs.opencv.org/4.10.0.zip
           # wget -q https://docs.opencv.org/4.10.0.tar.xz
-          wget -q https://s3.amazonaws.com/redisinsight.download/public/latest/Redis-Insight-mac-x64.dmg
+          # wget -q https://s3.amazonaws.com/redisinsight.download/public/latest/Redis-Insight-mac-x64.dmg
+          wget -q https://github.com/qishibo/AnotherRedisDesktopManager/releases/download/v1.6.7/Another-Redis-Desktop-Manager.1.6.7.dmg
+          
 
 
           ls -al
